@@ -10,25 +10,9 @@ namespace ImageImport.DataAccess
         {
         }
 
-        //public BeholderContext(string nameOrConnectionString) : base(nameOrConnectionString)
-        //{
-        //}
-
         public static BeholderContext Create(string contextName)
         {
             return new BeholderContext(contextName);
-
-            //var entityBuilder = new EntityConnectionStringBuilder();
-
-            //// use your ADO.NET connection string
-            //entityBuilder.ProviderConnectionString = providerConnectionString;
-
-            //entityBuilder.Provider = "System.Data.SqlClient";
-
-            //// Set the Metadata location.
-            ////entityBuilder.Metadata = @"res://*/Database.DWH.DWModel.csdl|res://*/Database.DWH.DWModel.ssdl|res://*/Database.DWH.DWModel.msl";
-
-            //return new BeholderContext(entityBuilder.ConnectionString);
 
         }
 
