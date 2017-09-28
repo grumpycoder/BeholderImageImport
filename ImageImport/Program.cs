@@ -14,6 +14,8 @@ namespace ImageImport
             Console.Write("Enter file path or exit to quit: ");
             var path = Console.ReadLine();
 
+            if (path == "exit") Environment.Exit(0);
+
             Console.Write("Which environment (P)roduction or (T)est: ");
             var env = Console.ReadLine();
 
@@ -95,6 +97,7 @@ namespace ImageImport
                 Console.WriteLine($"Executing import on {contextName}");
 
             } while (path != "exit");
+
             Console.Write("Finished");
             Console.ReadLine();
         }
